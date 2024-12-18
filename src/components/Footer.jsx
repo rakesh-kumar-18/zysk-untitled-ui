@@ -3,7 +3,7 @@ const Footer = () => {
         {
             title: "Product",
             links: ["Overview", "Features", "Solutions", "Tutorials", "Pricing", "Releases"],
-            special: { label: "New", link: "Solutions" }, // Highlight 'New' beside Solutions
+            special: { label: "New", link: "Solutions" },
         },
         {
             title: "Company",
@@ -33,14 +33,14 @@ const Footer = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-7xl mx-auto">
                 {footerSections.map((section, index) => (
                     <div key={index}>
-                        <h4 className="font-semibold text-gray-900 mb-4">{section.title}</h4>
+                        <h4 className="font-semibold text-[#667085] mb-4">{section.title}</h4>
                         <ul className="space-y-2">
                             {section.links.map((link) => (
-                                <li key={link} className="text-gray-600 hover:text-gray-900 transition">
+                                <li key={link} className="text-[#475467] font-semibold hover:text-gray-900 transition">
                                     {section.special?.link === link ? (
                                         <span className="relative">
                                             {link}{" "}
-                                            <span className="inline-block ml-1 px-1.5 py-0.5 text-xs font-semibold text-green-700 bg-green-100 rounded">
+                                            <span className="inline-block ml-1 px-1.5 py-0.5 text-xs font-semibold text-green-700 bg-[#ECFDF3] rounded-full border-solid border-2 border-[#ABEFC6]">
                                                 {section.special.label}
                                             </span>
                                         </span>
