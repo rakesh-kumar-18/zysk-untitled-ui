@@ -2,6 +2,7 @@ import Logo from "../assets/untitled-logo.png";
 import ProfileIcon from "../assets/profile-icon.png";
 import Dashboard from "../assets/dashboard-container.png";
 import { FaAngleDown } from "react-icons/fa6";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 const HeroSection = () => {
     return (
@@ -57,10 +58,10 @@ const HeroSection = () => {
             <section className="text-center px-4 md:px-0 mt-16">
                 <div className="max-w-4xl mx-auto">
                     <div className="mb-4 flex justify-center items-center mx-auto rounded-full border-solid border-2 border-[#E9D7FE] max-w-fit px-1 font-semibold">
-                        <span className="text-xs px-2 text-purple-800 rounded-full border-solid border-2 border-[#D6BBFB]">
+                        <span className="text-xs px-2 text-[#6941C6] rounded-full border-solid border-2 border-[#D6BBFB]">
                             New feature
                         </span>
-                        <a href="#" className="text-xs px-3 py-1 text-purple-800">
+                        <a href="#" className="text-xs px-3 py-1 text-[#6941C6]">
                             Check out the team dashboard →
                         </a>
                     </div>
@@ -72,11 +73,12 @@ const HeroSection = () => {
                         engage, and retain more users. Trusted by over 4,000 startups.
                     </p>
                     <div className="flex justify-center gap-4">
-                        <button className="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700">
-                            Sign up
-                        </button>
-                        <button className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100">
+                        <button className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 flex items-center">
+                            <MdOutlineSlowMotionVideo className="mr-2" />
                             Demo
+                        </button>
+                        <button className="px-6 py-2 bg-[#7F56D9] text-white rounded-md hover:bg-purple-700">
+                            Sign up
                         </button>
                     </div>
                 </div>

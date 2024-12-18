@@ -1,4 +1,8 @@
+import Logo from "../assets/untitled-logo.png";
+
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     const footerSections = [
         {
             title: "Product",
@@ -61,13 +65,13 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
                 <div className="flex items-center space-x-2 mb-4 md:mb-0">
                     <img
-                        src="https://via.placeholder.com/32"
+                        src={Logo}
                         alt="Logo"
                         className="w-8 h-8"
                     />
                     <span className="font-semibold text-gray-900">Untitled UI</span>
                 </div>
-                <p className="text-sm text-gray-600">© 2077 Untitled UI. All rights reserved.</p>
+                <p className="text-sm text-gray-600">© {currentYear} Untitled UI. All rights reserved.</p>
             </div>
         </footer>
     );
