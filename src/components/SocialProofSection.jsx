@@ -1,11 +1,18 @@
+import BoltshiftLogo from "../assets/boltshift.png";
+import LightboxLogo from "../assets/lightbox.png";
+import FeatherDevLogo from "../assets/featherdev.png";
+import SpheruleLogo from "../assets/spherule.png";
+import GlobalBankLogo from "../assets/globalbank.png";
+import NietzscheLogo from "../assets/nietzsche.png";
+
 const SocialProofSection = () => {
     const companies = [
-        { name: "Boltshift", logo: "🔵", color: "text-blue-600" },
-        { name: "Lightbox", logo: "⬛", color: "text-black" },
-        { name: "FeatherDev", logo: "🟢", color: "text-green-600" },
-        { name: "Spherule", logo: "🟣", color: "text-purple-600" },
-        { name: "GlobalBank", logo: "🔷", color: "text-blue-500" },
-        { name: "Nietzsche", logo: "🟠", color: "text-orange-500" },
+        { name: "Boltshift", logo: BoltshiftLogo },
+        { name: "Lightbox", logo: LightboxLogo },
+        { name: "FeatherDev", logo: FeatherDevLogo },
+        { name: "Spherule", logo: SpheruleLogo },
+        { name: "GlobalBank", logo: GlobalBankLogo },
+        { name: "Nietzsche", logo: NietzscheLogo },
     ];
 
     return (
@@ -19,8 +26,14 @@ const SocialProofSection = () => {
                         key={index}
                         className="flex items-center justify-center space-x-2"
                     >
-                        <span className={`text-3xl ${company.color}`}>{company.logo}</span>
-                        <span className="font-semibold text-gray-800">{company.name}</span>
+                        <img
+                            src={company.logo}
+                            alt={`${company.name} Logo`}
+                            className="w-8 h-8 object-contain"
+                        />
+                        <span className="font-bold text-lg text-[#101828]">
+                            {company.name}
+                        </span>
                     </div>
                 ))}
             </div>
