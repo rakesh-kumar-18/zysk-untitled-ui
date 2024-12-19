@@ -1,6 +1,7 @@
 import Logo from "../assets/untitled-logo.png";
 import ProfileIcon from "../assets/profile-icon.png";
 import Dashboard from "../assets/dashboard-container.png";
+import Desktop from "../assets/desktop-view.png";
 import { FaAngleDown } from "react-icons/fa6";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
@@ -88,7 +89,12 @@ const HeroSection = () => {
                     <img
                         src={Dashboard}
                         alt="Dashboard Screenshot"
-                        className="mx-auto w-full max-w-5xl"
+                        className="hidden md:block mx-auto w-full max-w-5xl"
+                    />
+                    <img
+                        src={Desktop}
+                        alt="Dashboard Screenshot"
+                        className="md:hidden mx-auto w-full max-w-5xl"
                     />
                 </div>
             </section>
