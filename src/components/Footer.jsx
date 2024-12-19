@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="border-t border-gray-200 mt-12 mb-8"></div>
 
             {/* Bottom Footer */}
-            <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between md:items-center max-w-7xl mx-auto">
                 <div className="flex items-center space-x-2 mb-4 md:mb-0">
                     <img
                         src={Logo}

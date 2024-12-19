@@ -40,7 +40,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Profile Icon */}
-                <div className="flex items-center space-x-2">
+                <div className="hidden md:flex items-center space-x-2">
                     <img
                         src={ProfileIcon}
                         alt="Profile"
@@ -72,12 +72,12 @@ const HeroSection = () => {
                         Powerful, self-serve product and growth analytics to help you convert,
                         engage, and retain more users. Trusted by over 4,000 startups.
                     </p>
-                    <div className="flex justify-center gap-4">
-                        <button className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 flex items-center">
+                    <div className="md:flex justify-center gap-4">
+                        <button className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 flex items-center justify-center w-full md:w-fit mb-3 md:mb-0">
                             <MdOutlineSlowMotionVideo className="mr-2" />
                             Demo
                         </button>
-                        <button className="px-6 py-2 bg-[#7F56D9] text-white rounded-md hover:bg-purple-700">
+                        <button className="px-6 py-2 bg-[#7F56D9] text-white rounded-md hover:bg-purple-700 w-full md:w-fit">
                             Sign up
                         </button>
                     </div>

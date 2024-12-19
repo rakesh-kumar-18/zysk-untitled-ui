@@ -45,7 +45,7 @@ const BlogSection = () => {
             <div className="max-w-7xl mx-auto mb-8 md:mb-12">
                 <div className="flex items-center justify-between">
                     <p className="text-sm font-semibold text-purple-600 mb-2">Our blog</p>
-                    <div className="flex justify-center mt-8">
+                    <div className="hidden md:flex justify-center mt-8">
                         <a
                             href="#"
                             className="px-6 py-2 bg-purple-600 text-white rounded-md font-semibold hover:bg-purple-700"
@@ -101,6 +101,16 @@ const BlogSection = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            {/* View All Posts Button */}
+            <div className="md:hidden mt-8 flex">
+                <a
+                    href="#"
+                    className="px-6 py-2 bg-purple-600 text-white rounded-md font-semibold hover:bg-purple-700 w-full text-center"
+                >
+                    View all posts
+                </a>
             </div>
         </section>
     );
