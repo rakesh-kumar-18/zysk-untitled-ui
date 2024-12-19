@@ -76,7 +76,7 @@ const FAQSection = () => {
 
             {/* Bottom Call-to-Action */}
             <div className="max-w-3xl mx-auto mt-12 p-6 rounded-lg bg-[#F9FAFB] text-center">
-                <div className="flex justify-center mb-4 space-x-2">
+                <div className="flex justify-center mb-4 space-x-2 relative">
                     {/* Example avatars */}
                     <img
                         src={Alec}
@@ -86,7 +86,7 @@ const FAQSection = () => {
                     <img
                         src={Olivia}
                         alt="Avatar 2"
-                        className="w-10 h-10 rounded-full object-cover"
+                        className="w-10 h-10 rounded-full object-cover absolute bottom-1"
                     />
                     <img
                         src={Lori}
